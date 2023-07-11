@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
@@ -23,7 +22,6 @@
 }
 
 @layer components {
-
   /** Prevent scroll when modal is open */
   .no-scroll {
     overflow: hidden;
@@ -32,7 +30,6 @@
 }
 
 @layer utilities {
-
   /** Remove scrollbar from overflow-auto */
   .scrollbar-none {
     scrollbar-width: none;

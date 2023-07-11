@@ -7,6 +7,7 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/scanwind.tsx";
 import * as $$$$$$$$0 from "./sections/Head.tsx";
 import * as $$$$$$$$1 from "./sections/DesignSystem.tsx";
 import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
@@ -170,6 +171,9 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/styles.css.ts": $$$$0,
   },
+  "islands": {
+    "./islands/scanwind.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
@@ -265,7 +269,6 @@ const manifest = {
     "deco-sites/std/accounts/vtex.ts": i2$$3,
     "deco-sites/std/accounts/yourViews.ts": i2$$4,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

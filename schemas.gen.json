@@ -61,6 +61,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/scanwind.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -7476,20 +7477,6 @@
       "required": [],
       "title": "deco-sites/cmrg/sections/DesignSystem.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9jbXJnL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "enableInspectVSCode": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Enable Inspect V S Code"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/cmrg/sections/GetStarted.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9jbXJnL3NlY3Rpb25zL0hlYWQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -9612,6 +9599,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL3NjYW53aW5kLnRzeA==": {
+      "title": "./islands/scanwind.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/scanwind.tsx"
+          ],
+          "default": "./islands/scanwind.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "Private Fresh Page",
       "description": "Useful for pages under development.",
@@ -9871,11 +9874,6 @@
     "ZGVjby1zaXRlcy9jbXJnL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
       "title": "deco-sites/cmrg/sections/GetStarted.tsx",
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbXJnL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props"
-        }
-      ],
       "required": [
         "__resolveType"
       ],
@@ -10974,7 +10972,14 @@
     },
     "islands": {
       "title": "islands",
-      "anyOf": []
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL3NjYW53aW5kLnRzeA=="
+        }
+      ]
     },
     "handlers": {
       "title": "handlers",
